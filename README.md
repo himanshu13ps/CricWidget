@@ -1,5 +1,5 @@
 # CricWidget
-Source code for IPL Live score widget created in 2013
+Source code for IPL Live score widget created in 2012
 
 The app was initially created in Eclipse with ADT. It has been migrated to Android Studio environment. 
 
