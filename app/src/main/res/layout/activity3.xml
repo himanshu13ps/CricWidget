@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FF3b99c0">
+    
+    
+    <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/black_white_gradient" />
+     		    />
+    
+    
+    <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/live_match2" 
+	           
+	            />
+    <!-- Live Match  -->
+    
+    <TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Chennai Super Kings" 
+                android:textSize="16dip"
+                android:textColor="#FFFFFFFF">
+            </TextView>   
+	 
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal|center_vertical"
+          
+         >
+
+        
+            
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:src="@drawable/csk" 
+	            android:layout_marginRight="20dip"/>
+
+	        <TextView
+	            android:id="@+id/sn1"
+	            style="@android:style/TextAppearance.Widget.TextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:text="Vs"
+	            android:textSize="14dip" />
+            
+	         <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:src="@drawable/mi" 
+	            android:layout_marginLeft="20dip"/>
+        
+      </LinearLayout>
+ 
+      
+   			<TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Mumbai Indians" 
+                android:textSize="16dip"
+                android:textColor="#FFFFFFFF"
+               >
+    		</TextView> 
+    		
+   			<!-- Score details rectangle -->
+   	 <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="8dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/my_rect"  
+        android:orientation="vertical"         
+         >
+
+   	     <TextView
+   	         android:id="@+id/line2"
+   	         style="@android:style/TextAppearance.Medium"
+   	         android:layout_width="match_parent"
+   	         android:layout_height="wrap_content"
+   	         android:layout_margin="4dip"
+   	         android:gravity="left|center_vertical"
+   	         android:textColor="#FF000000"
+   	         android:textSize="16dip"    	         
+   	         android:text="Batting: CSK 144/7(19.5 Overs)">
+   	     </TextView>
+    		
+   	    
+   	     
+            <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/grey_black_gradient" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+     		    />
+            
+            <TextView
+                 android:id="@+id/line2"
+	   	         style="@android:style/TextAppearance.Medium"
+	   	         android:layout_width="match_parent"
+	   	         android:layout_height="wrap_content"
+	   	         android:layout_margin="4dip"
+	   	         android:paddingLeft="10dip"
+	   	         android:gravity="left|center_vertical"
+	   	         android:textColor="#FF000000"
+	   	         android:textSize="16dip" 
+                 android:text="Ravindra Jadeja* 24(12)" >
+    		</TextView>
+            
+             <TextView
+                 android:id="@+id/line2"
+	   	         style="@android:style/TextAppearance.Medium"
+	   	         android:layout_width="match_parent"
+	   	         android:layout_height="wrap_content"
+	   	         android:layout_margin="4dip"
+	   	         android:paddingLeft="10dip"
+	   	         android:gravity="left|center_vertical"
+	   	         android:textColor="#FF000000"
+	   	         android:textSize="16dip" 
+                 android:text="Dwayne Bravo 36(30)" 
+               >
+    		</TextView>
+             <!-- 
+              <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/grey_black_gradient" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+     		    />
+             
+           	<TextView
+                android:id="@+id/line2"
+   	         	style="@android:style/TextAppearance.Medium"
+   	         	android:layout_width="match_parent"
+   	         	android:layout_height="wrap_content"
+   	         	android:layout_margin="4dip"
+   	         	android:gravity="left|center_vertical"
+   	         	android:textColor="#FF000000"
+   	         	android:textSize="16dip"
+                android:text="Bowling: MI (197/8)" 
+                >
+    		</TextView>
+    		
+           	   <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/black_white_gradient" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+     		    />
+     		 
+    		
+    		<TextView
+                 android:id="@+id/line2"
+	   	         style="@android:style/TextAppearance.Medium"
+	   	         android:layout_width="match_parent"
+	   	         android:layout_height="wrap_content"
+	   	         android:layout_margin="4dip"
+	   	         android:paddingLeft="10dip"
+	   	         android:gravity="left|center_vertical"
+	   	         android:textColor="#FF000000"
+	   	         android:textSize="16dip" 
+                 android:text="Rohit Sharma 1/41 (3.5 overs)" 
+                >
+    		</TextView>
+    		
+    		-->
+   	 </LinearLayout>
+    
+    <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/grey_black_gradient" />
+     		    />
+    
+    <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/next_match2" 
+	            />
+    
+    
+    <!-- Next Match -->
+    
+    <TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Royal Challengers" 
+                android:textSize="16dip"
+                android:textColor="#FFFFFFFF">
+            </TextView>   
+    
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal|center_vertical"
+          
+         >
+
+        
+            
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:src="@drawable/rcb" 
+	            android:layout_marginRight="20dip"/>
+
+	        <TextView
+	            android:id="@+id/sn1"
+	            style="@android:style/TextAppearance.Widget.TextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:text="Vs"
+	            android:textSize="14dip" />
+            
+	         <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:src="@drawable/kkr" 
+	            android:layout_marginLeft="20dip"/>
+        
+      </LinearLayout>
+	
+     <TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Kolkata Knight Riders" 
+                android:textSize="16dip"
+                android:textColor="#FFFFFFFF">
+    		</TextView> 
+    		
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="8dip"
+        android:background="@drawable/my_rect"  
+        android:orientation="vertical"         
+         >
+     <TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+   	         	android:gravity="center_horizontal|center_vertical"
+   	         	android:textColor="#FF000000"
+   	         	android:textSize="16dip"
+                android:text=" @ Chinnaswamy Stadium" 
+                >
+    		</TextView> 
+    		
+     <View 
+     		    android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="@drawable/grey_black_gradient" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+     		    />
+    		
+   			<TextView
+                android:id="@+id/line2"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+   	         	android:gravity="center_horizontal|center_vertical"
+   	         	android:textColor="#FF000000"
+   	         	android:textSize="16dip"
+                android:text="Tue Apr 10, Starts 4.00pm IST" 
+                >
+    		</TextView> 
+    		
+   			</LinearLayout>
+</LinearLayout>

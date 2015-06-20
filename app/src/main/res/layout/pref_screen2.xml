@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Main">
+		<CheckBoxPreference android:title="Enable Auto Update"
+			android:key="EnablePreferences" android:summary="Check to auto-update for Live matches" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Other Prefernces">
+		<ListPreference android:title="Update Interval"
+			android:key="DayOfWeek" android:dependency="EnablePreferences"
+			android:summary="Selec Day of the Week" android:entries="@array/update_interval_array"
+			android:entryValues="@array/update_interval_array" />
+	</PreferenceCategory>	
+</PreferenceScreen>

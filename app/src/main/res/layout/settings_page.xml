@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	
+    <!-- Warning -->
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:background="#FF555555"
+	>
+	    <TextView android:id="@+android:id/title"
+		        android:layout_width="match_parent" 
+		        android:layout_height="20dip" 
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginTop="4dip"
+	    		android:layout_marginBottom="4dip"
+		        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+		        android:fadingEdge="horizontal"
+		        android:text="Warning"
+		        android:textColor="#FFBBBBBB"
+		       />
+	    
+    </LinearLayout>
+    
+    <TextView android:id="@+android:id/title"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	    	android:layout_marginRight="6dip" 
+	   	 	android:layout_marginTop="20dip"
+	    	android:layout_marginBottom="20dip" 
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:fadingEdge="horizontal"
+	        android:text="Enabling auto updates for smaller update interval may incur considerable network data usage and battery usage"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:background="#FF555555"
+	>
+	    <TextView android:id="@+android:id/title"
+		        android:layout_width="match_parent" 
+		        android:layout_height="20dip" 
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginTop="4dip"
+	    		android:layout_marginBottom="4dip"
+		        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+		        android:fadingEdge="horizontal"
+		        android:text="Settings"
+		        android:textColor="#FFBBBBBB"
+		       />
+	    
+    </LinearLayout>
+	<!-- Update Checbox -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:gravity="center_vertical" 
+		android:paddingRight="?android:attr/scrollbarSize">
+	
+	<RelativeLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="6dip" 
+	    android:layout_marginTop="6dip"
+	    android:layout_marginBottom="6dip" 
+	    android:layout_weight="1">
+	
+	    <TextView android:id="@+android:id/title"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:singleLine="true" 
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:ellipsize="start" 
+	        android:text="Enable Auto Updates"/>
+	
+	    <TextView android:id="@+android:id/summary"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@android:id/title" 
+	        android:layout_alignLeft="@android:id/title"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:maxLines="4" 
+	        android:text="Enables updates only for Live Matches"/>
+	
+	</RelativeLayout>
+		
+	<LinearLayout android:id="@+android:id/widget_frame"
+	    android:layout_width="wrap_content" android:layout_height="match_parent"
+	    android:gravity="center_vertical" android:orientation="vertical" />
+		
+		<CheckBox
+	    android:id="@+id/autoCheckbox"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="fill_parent" 
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	/>  
+	
+	</LinearLayout>
+	
+	<View
+	 	android:background="@drawable/settings_seperator"   
+	 	android:layout_height="2dip"
+	 	android:layout_width="match_parent"
+	 	android:layout_marginLeft="15dip"
+	    android:layout_marginRight="15dip" 	 	
+	/>    
+	
+	
+	<!-- Update Interval -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:gravity="center_vertical" 
+		android:paddingRight="?android:attr/scrollbarSize">
+	
+	<RelativeLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="6dip" 
+	    android:layout_marginTop="6dip"
+	    android:layout_marginBottom="6dip" 
+	    android:layout_weight="1">
+	
+	    <TextView android:id="@+android:id/title"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:singleLine="true" 
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:ellipsize="start" 
+	        android:text="Set the Update Interval"/>
+	
+	    <Spinner
+		    android:id="@+id/interval_spinner"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+	        android:layout_below="@android:id/title" 
+	        android:layout_alignLeft="@android:id/title"
+	        android:layout_marginTop="6dip"
+	        android:prompt="@string/auto_update_prompt"
+	        android:entries="@array/updateInterval"
+	        />
+	
+	</RelativeLayout>
+	</LinearLayout>
+	
+	<View
+	 	android:background="@drawable/settings_seperator"   
+	 	android:layout_height="2dip"
+	 	android:layout_width="match_parent"
+	 	android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip" 	 	
+	/>  
+	
+	 <TextView android:id="@+android:id/title"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:text="Press 'Back' to save settings"
+	        android:layout_marginTop="15dip"
+	        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

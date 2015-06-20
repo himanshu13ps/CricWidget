@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">IPL Live Score Widget</string>
+     <string name="auto_update_prompt">Auto Update Interval</string>
+    <string-array name="update_interval_array">
+        <item>1 Minute</item>
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+    </string-array>
+
+</resources>
